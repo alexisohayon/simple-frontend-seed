@@ -1,4 +1,20 @@
 // this is the main file that pulls in all other modules
-var settings = require('./settings');
+var _settings = {
 
-
+	// skelJS
+	skelJS: {
+		prefix: 'stylesheets/main',
+		resetCSS: true,
+		boxModel: 'border',
+		containers: 1200,
+		useOrientation: true,
+		breakpoints: {
+			'widest': { range: '*', containers: 1360, grid: { gutters: 50 }, hasStyleSheet: false },
+			'wide': { range: '-1680', containers: 1200, grid: { gutters: 40 } },
+			'normal': { range: '-1280', containers: 960, grid: { gutters: 30 }, lockViewport: true },
+			'narrow': { range: '-1000', containers: '100%', grid: { gutters: 25, collapse: true }, lockViewport: true },
+			'mobile': { range: '-640', containers: '100%', grid: { gutters: 10, collapse: true }, lockViewport: true }
+		}
+	}
+};
+skel.init(_settings.skelJS);
