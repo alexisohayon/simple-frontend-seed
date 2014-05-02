@@ -1,0 +1,25 @@
+{
+  "name": "club-baume",
+  "version": "0.0.0",
+  "authors": [
+    "Alexis Ohayon <alexis@takes.io>"
+  ],
+  "description": "New website for company \"Le Club de la Baume\"",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.0.3",
+    "ubuntu-font": "*",
+    "skeljs": "~0.4.7"
+  }
+}
